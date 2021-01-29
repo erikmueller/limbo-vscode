@@ -118,7 +118,8 @@
                 "constant.language.import-export-all",
                 "support.type.exception",
                 "meta.parameters",
-                "entity.name.type.interface"
+                "entity.name.type.interface",
+                "entity.name.type.class"
 			],
 			"settings": {
 				"foreground": "#fff"
@@ -169,8 +170,7 @@
                 "support.type.primitive",
 
                 "markup.quote",
-                "meta.decorator",
-                "entity.name.type"
+                "punctuation.decorator"
 			],
 			"settings": {
                 "foreground": "#b078f5",
