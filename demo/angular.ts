@@ -16,4 +16,4 @@ const age = 100;
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export default class AppModule { }

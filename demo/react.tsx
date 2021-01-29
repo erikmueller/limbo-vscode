@@ -1,6 +1,7 @@
 import * as React from "React";
 
 // Aweseome class
+@foo()
 export class App extends React.Component {
   public foo: string = 'Hello world';
 

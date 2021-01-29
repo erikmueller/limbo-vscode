@@ -6,10 +6,24 @@
 	"name": "limbo",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#181818",
-		"editor.foreground": "#bbb",
+        "activityBar.activeBackground": "#5b0096",
+        "activityBar.activeFocusBorder": "#5b0096",
+        "activityBar.background": "#1b1b1b",
+        "activityBar.foreground": "#aaa",
 		"activityBarBadge.background": "#5b0096",
-		"sideBarTitle.foreground": "#bbb"
+		"editor.background": "#1b1b1b",
+        "editor.foreground": "#ccc",
+        "editor.findMatchBorder": "#fff",
+        "editor.lineHighlightBackground": "#222",
+        "editor.selectionBackground": "#333",
+        "editor.selectionHighlightBackground": "#333",
+        "focusBorder": "#1b1b1b",
+        "list.hoverForeground": "#fff",
+        "list.hoverBackground": "#1b1b1b",
+        "list.activeSelectionBackground": "#333",
+        "sideBar.background": "#1b1b1b",
+        "sideBarSectionHeader.background": "#282828",
+        "sideBarTitle.foreground": "#bbb"
 	},
 	"tokenColors": [
         {
@@ -30,14 +44,13 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#555"
+				"foreground": "#666"
 			}
 		},
 		{
 			"name": "Keyword, Operator",
 			"scope": [
 				"constant.other.color",
-
 				"punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
 				"punctuation.definition.tag.html",
@@ -56,17 +69,35 @@
         {
 			"name": "Keyword, Operator italic",
 			"scope": [
-                "keyword.operator.expression",
+                "constant.language",
 				"storage.type",
                 "storage.modifier",
-                "constant.language",
-                "variable.language.this",
+                "keyword.control.as",
                 "keyword.control.conditional",
-                "keyword.control.flow"
+                "keyword.control.default",
+                "keyword.control.export",
+                "keyword.control.flow",
+                "keyword.control.from",
+                "keyword.control.import",
+                "keyword.function",
+                "keyword.operator.expression",
+                "meta.separator"
 			],
 			"settings": {
                 "foreground": "#aaa",
                 "fontStyle": "italic"
+			}
+        },
+        {
+			"name": "usual",
+			"scope": [
+                "meta.object",
+                "meta.jsx.children",
+                "support.type.property-name",
+                "variable.object.property"
+			],
+			"settings": {
+                "foreground": "#ccc"
 			}
         },
         {
@@ -81,9 +112,13 @@
 				"markup.changed.git_gutter",
                 "support.type.sys-types",
                 "entity.other.inherited-class",
-                "variable.other",
+                "variable.other.readwrite.alias",
                 "meta.block",
                 "meta.definition",
+                "constant.language.import-export-all",
+                "support.type.exception",
+                "meta.parameters",
+                "entity.name.type.interface"
 			],
 			"settings": {
 				"foreground": "#fff"
@@ -92,11 +127,22 @@
 		{
 			"name": "Block Level Variables italic",
 			"scope": [
-                "meta.parameters"
+                "markup.italic",
+                "variable.language.this"
 			],
 			"settings": {
                 "foreground": "#fff",
                 "fontStyle": "italic"
+			}
+		},
+		{
+			"name": "bold",
+			"scope": [
+                "markup.bold"
+			],
+			"settings": {
+                "foreground": "#fff",
+                "fontStyle": "bold"
 			}
 		},
         {
@@ -106,7 +152,7 @@
 				"variable.function",
 				"support.function",
                 "keyword.other.special-method",
-				"support.constant",
+                "support.constant",
 				"constant.character",
 				"constant.escape",
 				"keyword.other.unit",
@@ -114,16 +160,20 @@
                 "meta.tag"
 			],
 			"settings": {
-				"foreground": "#B98DD4"
+				"foreground": "#b078f5"
 			}
 		},
 		{
 			"name": "African Violet italic",
 			"scope": [
-                "support.type.primitive"
+                "support.type.primitive",
+
+                "markup.quote",
+                "meta.decorator",
+                "entity.name.type"
 			],
 			"settings": {
-                "foreground": "#B98DD4",
+                "foreground": "#b078f5",
                 "fontStyle": "italic"
 
 			}
@@ -132,11 +182,13 @@
 			"name": "Burnt Sienna",
 			"scope": [
                 "constant.numeric",
+                "punctuation.definition.list",
+                "constant.character.entity",
+                "meta.image.inline",
+                "source.js constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-                "foreground": "#E67B5B",
-                "fontStyle": "italic"
-
+                "foreground": "#E67B5B"
 			}
         },
 		{
@@ -146,10 +198,10 @@
 				"constant.other.key",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+                "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-                "foreground": "#90CEE0"
+                "foreground": "#78e6f5"
 
 			}
 		},
@@ -177,7 +229,7 @@
 				"markup.changed"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#b078f5"
 			}
 		},
 		{
@@ -186,7 +238,7 @@
 				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#78e6f5"
 			}
 		},
 		{
@@ -195,7 +247,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#78e6f5"
 			}
 		},
 		{
@@ -209,26 +261,5 @@
 				"fontStyle": "underline"
 			}
 		},
-		{
-			"name": "Decorators",
-			"scope": [
-				"tag.decorator.js entity.name.tag.js",
-				"tag.decorator.js punctuation.definition.tag.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "ES7 Bind Operator",
-			"scope": [
-				"source.js constant.other.object.key.js string.unquoted.label.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FF5370"
-			}
-		}
 	]
 }
