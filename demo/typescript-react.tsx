@@ -1,17 +1,10 @@
 import * as React from "React";
 
-// Aweseome class
-@foo()
+@Decorator()
 export class App extends React.Component {
-  public foo: string = 'Hello world';
+  public foo: string = "Hello world";
 
   public render() {
-    const quz = "bar"
-
-    let me = {
-      foo: 'bar'
-    }
-
     return (
       <div className="App">
         <header className="App-header">

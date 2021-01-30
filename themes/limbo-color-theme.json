@@ -1,3 +1,6 @@
+// https://accessible-colors.com/
+// https://www.color-blindness.com/coblis-color-blindness-simulator/
+
 {
 	"name": "limbo",
 	"type": "dark",
@@ -19,7 +22,10 @@
         "list.activeSelectionBackground": "#333",
         "sideBar.background": "#1b1b1b",
         "sideBarSectionHeader.background": "#282828",
-        "sideBarTitle.foreground": "#bbb"
+        "sideBarTitle.foreground": "#bbb",
+        "editorGutter.addedBackground": "#73C991",
+        "editorGutter.modifiedBackground": "#E2C08D",
+        "editorGutter.deletedBackground": "#F88070"
 	},
 	"tokenColors": [
         {
@@ -56,10 +62,13 @@
 				"keyword.other.template",
                 "keyword.other.substitution",
                 "keyword.operator",
-                "entity.other.attribute-name"
+                "entity.other.attribute-name",
+                "support.type.primitive",
+                "entity.name.type",
 			],
 			"settings": {
-                "foreground": "#aaa"
+                "foreground": "#aaa",
+                "fontStyle": ""
 			}
         },
         {
@@ -68,13 +77,7 @@
                 "constant.language",
 				"storage.type",
                 "storage.modifier",
-                "keyword.control.as",
-                "keyword.control.conditional",
-                "keyword.control.default",
-                "keyword.control.export",
-                "keyword.control.flow",
-                "keyword.control.from",
-                "keyword.control.import",
+                "keyword.control",
                 "keyword.function",
                 "keyword.operator.expression",
                 "meta.separator"
@@ -90,10 +93,17 @@
                 "meta.object",
                 "meta.jsx.children",
                 "support.type.property-name",
-                "variable.object.property"
+                "variable.object.property",
+                "variable.other.property",
+                "variable.other.object",
+                "meta.embedded.expression",
+                "meta.definition",
+                "entity.name.tag.yaml",
+                "support.type.property-name.json"
 			],
 			"settings": {
-                "foreground": "#ccc"
+                "foreground": "#ddd",
+                "fontStyle": ""
 			}
         },
         {
@@ -110,15 +120,16 @@
                 "entity.other.inherited-class",
                 "variable.other.readwrite.alias",
                 "meta.block",
-                "meta.definition",
                 "constant.language.import-export-all",
                 "support.type.exception",
                 "meta.parameters",
                 "entity.name.type.interface",
-                "entity.name.type.class"
+                "entity.name.type.module",
+                "markup.heading"
 			],
 			"settings": {
-				"foreground": "#fff"
+                "foreground": "#fff",
+                "fontStyle": ""
 			}
 		},
 		{
@@ -154,24 +165,25 @@
 				"constant.escape",
 				"keyword.other.unit",
                 "keyword.other",
-                "meta.tag"
+                "meta.tag",
+                "punctuation.decorator",
+                "entity.name.type.class",
+                "constant.other.character-class.regexp"
 			],
 			"settings": {
-				"foreground": "#b078f5"
+                "foreground": "#CF87FF",
+                "fontStyle": ""
 			}
 		},
 		{
 			"name": "African Violet italic",
 			"scope": [
-                "support.type.primitive",
-
                 "markup.quote",
-                "punctuation.decorator"
+                "keyword.control.pseudo-method"
 			],
 			"settings": {
-                "foreground": "#b078f5",
+                "foreground": "#CF87FF",
                 "fontStyle": "italic"
-
 			}
         },
         {
@@ -181,10 +193,14 @@
                 "punctuation.definition.list",
                 "constant.character.entity",
                 "meta.image.inline",
-                "source.js constant.other.object.key.js string.unquoted.label.js"
+                "constant.other.symbol",
+                "source.js constant.other.object.key.js string.unquoted.label.js",
+                "constant.character.escape",
+                "keyword.operator.quantifier.regexp"
 			],
 			"settings": {
-                "foreground": "#E67B5B"
+                "foreground": "#f2976d",
+                "fontStyle": ""
 			}
         },
 		{
@@ -197,53 +213,8 @@
                 "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-                "foreground": "#78e6f5"
-
-			}
-		},
-		{
-			"name": "Inserted",
-			"scope": [
-				"markup.inserted"
-			],
-			"settings": {
-				"foreground": "#C3E88D"
-			}
-		},
-		{
-			"name": "Deleted",
-			"scope": [
-				"markup.deleted"
-			],
-			"settings": {
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "Changed",
-			"scope": [
-				"markup.changed"
-			],
-			"settings": {
-				"foreground": "#b078f5"
-			}
-		},
-		{
-			"name": "Regular Expressions",
-			"scope": [
-				"string.regexp"
-			],
-			"settings": {
-				"foreground": "#78e6f5"
-			}
-		},
-		{
-			"name": "Escape Characters",
-			"scope": [
-				"constant.character.escape"
-			],
-			"settings": {
-				"foreground": "#78e6f5"
+                "foreground": "#99ebff",
+                "fontStyle": ""
 			}
 		},
 		{

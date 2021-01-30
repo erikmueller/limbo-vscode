@@ -8,26 +8,23 @@ interface Food {
   name: string;
 }
 
-type Age = 1 | 2;
-
-const myAge: Age = 2;
-const myShoe: Shoe = { size: 10, name: 'Airmax' };
-
 function generateSome<T>(howMany: number): T {
-  return 100;
+  return {
+    size: 10,
+    name: 'wes',
+  };
 }
 
-const myShoes = generateSome<Shoe>(10);
+const unusedVariable;
+const used = true
+
+export default async function unreachableCode() {
+  return used ? 10 : 9;
+}
+
+const myShoe = generateSome<Shoe>(10);
 
 const banana: Food = {
   type: 'fruit',
-  name: 'nanski'
-}
-
-
-export default async function Hello(name: Food): Promise<Food> {
-  return banana;
-}
-
-console.log(myAge, myShoe, myShoes);
-
+  name: 'Banana',
+};
