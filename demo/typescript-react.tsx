@@ -3,6 +3,7 @@ import * as React from "React";
 @Decorator()
 export class App extends React.Component {
   public foo: string = "Hello world";
+  public bar: number = 142;
 
   public render() {
     return (
