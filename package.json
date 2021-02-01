@@ -1,8 +1,10 @@
 {
     "name": "limbo-vscode",
+    "publisher": "airrick",
     "displayName": "limbo",
     "description": "Black & White theme with a few sprinkles of color",
     "version": "0.0.1",
+    "repository": "https://github.com/erikmueller/limbo-vscode",
     "engines": {
         "vscode": "^1.52.0"
     },
