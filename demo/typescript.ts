@@ -1,3 +1,21 @@
+import { configureStore, EnhancedStore } from '@reduxjs/toolkit'
+import { default as middleware, rootReducer  } from './store'
+import * as sagas from './here'
+
+const array = [item1, ...others]
+
+export const store: EnhancedStore = configureStore({
+  reducer: rootReducer,
+  middleware
+})
+
+export const persistor = persistStore(store, null, () => {
+  sagas.forEach((saga) => runSaga(saga, store.dispatch))
+
+  return store
+})
+
+// Some interface
 interface Shoe {
   size: number;
   name: string;

@@ -111,13 +111,15 @@
                 "variable.object.property",
                 "variable.other.property",
                 "variable.other.object",
+                "variable.other",
                 "meta.embedded.expression",
                 "meta.definition",
                 "entity.name.tag.yaml",
-                "support.type.property-name.json"
+                "support.type.property-name.json",
+                "meta.parameters"
 			],
 			"settings": {
-                "foreground": "#ddd",
+                "foreground": "#e0e0e0",
                 "fontStyle": ""
 			}
         },
@@ -137,10 +139,10 @@
                 "meta.block",
                 "constant.language.import-export-all",
                 "support.type.exception",
-                "meta.parameters",
                 "entity.name.type.interface",
                 "entity.name.type.module",
-                "markup.heading"
+                "markup.heading",
+                "punctuation.separator.key-value"
 			],
 			"settings": {
                 "foreground": "#fff",
