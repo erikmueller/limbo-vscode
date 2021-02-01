@@ -116,7 +116,8 @@
                 "meta.definition",
                 "entity.name.tag.yaml",
                 "support.type.property-name.json",
-                "meta.parameters"
+                "meta.parameters",
+                "keyword.operator.spread"
 			],
 			"settings": {
                 "foreground": "#e0e0e0",
