@@ -80,8 +80,7 @@
                 "entity.other.attribute-name",
                 "support.type.primitive",
                 "entity.name.type",
-                "storage.type.function.arrow",
-                "entity.name.type.module"
+                "storage.type.function.arrow"
 			],
 			"settings": {
                 "foreground": "#a2a2a2",
@@ -148,7 +147,8 @@
                 "support.type.exception",
                 "entity.name.type.interface",
                 "markup.heading",
-                "punctuation.separator.key-value"
+                "punctuation.separator.key-value",
+                "entity.name.type.module"
 			],
 			"settings": {
                 "foreground": "#fff",

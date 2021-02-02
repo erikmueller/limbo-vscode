@@ -1,26 +1,23 @@
-import * as React from "React";
+import * as React from "react"
 
-function generateSome<T>(howMany: number): T {
-  const name = 'wes';
-  const size = 10;
-
-  return { size, name };
-};
-
-@Decorator()
 export class App extends React.Component {
-  public foo: string = "Hello world";
-  public bar: number = 142;
+  public foo: string = "Hello world"
+
+  onClick = (event: React.MouseEvent): void => {
+    console.log(event.target)
+  }
 
   // Some function
   public render() {
+    const bar = 142
+
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">{this.foo}</h1>
-          {generateSome<Object>(4).name}
+          <h1 className="App-title">{bar}</h1>
+          <button onClick={this.onClick} />
         </header>
       </div>
-    );
+    )
   }
 }

@@ -1,23 +1,39 @@
 {
     "name": "limbo-vscode",
+    "version": "0.0.1",
     "publisher": "airrick",
+    "engines": {
+      "vscode": "^1.52.0"
+    },
+    "license": "MIT",
     "displayName": "limbo",
     "description": "Black & White theme with a few sprinkles of color",
-    "version": "0.0.1",
-    "repository": "https://github.com/erikmueller/limbo-vscode",
-    "engines": {
-        "vscode": "^1.52.0"
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/erikmueller/limbo-vscode"
+    },
+    "scripts": {
+      "publish": "vsce publish"
+    },
+    "galleryBanner": {
+      "color": "#171717",
+      "theme": "dark"
     },
     "categories": [
-        "Themes"
+      "Themes"
     ],
+    "keywords": ["theme", "limbo", "dark", "black", "monochrome", "vscode", "WCAG", "accessible"],
     "contributes": {
-        "themes": [
-            {
-                "label": "limbo",
-                "uiTheme": "vs-dark",
-                "path": "./themes/limbo-color-theme.json"
-            }
-        ]
+      "themes": [
+        {
+            "label": "limbo",
+            "uiTheme": "vs-dark",
+            "path": "./themes/limbo-color-theme.json"
+        }
+      ]
+    },
+    "devDependencies": {
+      "react": "17.0.1",
+      "@types/react": "17.0.0"
     }
 }
