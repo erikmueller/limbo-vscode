@@ -8,24 +8,24 @@
         // Sidebar
         "activityBar.activeBorder": "#aaa",
         "activityBar.activeFocusBorder": "#aaa",
-        "activityBar.background": "#1b1b1b",
+        "activityBar.background": "#171717",
         "activityBar.foreground": "#aaa",
         "activityBar.inactiveForeground": "#444",
         "activityBarBadge.background": "#5b0096",
         "activityBarBadge.foreground": "#ccc",
         "button.background": "#444",
-        "focusBorder": "#1b1b1b",
+        "focusBorder": "#171717",
         "list.activeSelectionBackground": "#333",
-        "list.hoverBackground": "#1b1b1b",
+        "list.hoverBackground": "#171717",
         "list.hoverForeground": "#fff",
         "progressBar.background": "#aaa",
-        "selection.background": "#CF87FF",
-        "sideBar.background": "#1b1b1b",
+        "selection.background": "#C984FF",
+        "sideBar.background": "#171717",
         "sideBarSectionHeader.background": "#282828",
         "sideBarTitle.foreground": "#bbb",
-        "textLink.foreground": "#CF87FF",
+        "textLink.foreground": "#C984FF",
         // Editor
-        "editor.background": "#1b1b1b",
+        "editor.background": "#171717",
         "editor.findMatchBackground": "#555",
         "editor.findMatchHighlightBackground": "#333",
         "editor.foreground": "#ccc",
@@ -37,7 +37,7 @@
         "editorGutter.addedBackground": "#73C991",
         "editorGutter.deletedBackground": "#F88070",
         "editorGutter.modifiedBackground": "#E2C08D",
-        "minimap.selectionHighlight": "#CF87FF",
+        "minimap.selectionHighlight": "#C984FF",
         "minimapGutter.addedBackground": "#73C991",
         "minimapGutter.deletedBackground": "#F88070",
         "minimapGutter.modifiedBackground": "#E2C08D",
@@ -80,9 +80,11 @@
                 "entity.other.attribute-name",
                 "support.type.primitive",
                 "entity.name.type",
+                "storage.type.function.arrow",
+                "entity.name.type.module"
 			],
 			"settings": {
-                "foreground": "#aaa",
+                "foreground": "#a2a2a2",
                 "fontStyle": ""
 			}
         },
@@ -95,10 +97,11 @@
                 "keyword.control",
                 "keyword.function",
                 "keyword.operator.expression",
-                "meta.separator"
+                "meta.separator",
+                "variable.language.this"
 			],
 			"settings": {
-                "foreground": "#aaa",
+                "foreground": "#a2a2a2",
                 "fontStyle": "italic"
 			}
         },
@@ -111,16 +114,16 @@
                 "variable.object.property",
                 "variable.other.property",
                 "variable.other.object",
+                "variable.other.readwrite",
                 "variable.other",
                 "meta.embedded.expression",
                 "meta.definition",
                 "entity.name.tag.yaml",
                 "support.type.property-name.json",
                 "meta.parameters",
-                "keyword.operator.spread"
 			],
 			"settings": {
-                "foreground": "#e0e0e0",
+                "foreground": "#d0d0d0",
                 "fontStyle": ""
 			}
         },
@@ -137,11 +140,13 @@
                 "support.type.sys-types",
                 "entity.other.inherited-class",
                 "variable.other.readwrite.alias",
+                "variable.other.property",
+                "variable.other.object.property",
+                "variable.parameter",
                 "meta.block",
                 "constant.language.import-export-all",
                 "support.type.exception",
                 "entity.name.type.interface",
-                "entity.name.type.module",
                 "markup.heading",
                 "punctuation.separator.key-value"
 			],
@@ -153,8 +158,7 @@
 		{
 			"name": "Block Level Variables italic",
 			"scope": [
-                "markup.italic",
-                "variable.language.this"
+                "markup.italic"
 			],
 			"settings": {
                 "foreground": "#fff",
@@ -189,7 +193,7 @@
                 "constant.other.character-class.regexp"
 			],
 			"settings": {
-                "foreground": "#CF87FF",
+                "foreground": "#C984FF",
                 "fontStyle": ""
 			}
 		},
@@ -197,10 +201,10 @@
 			"name": "African Violet italic",
 			"scope": [
                 "markup.quote",
-                "keyword.control.pseudo-method"
+                "keyword.control.pseudo-method",
 			],
 			"settings": {
-                "foreground": "#CF87FF",
+                "foreground": "#C984FF",
                 "fontStyle": "italic"
 			}
         },
@@ -217,7 +221,7 @@
                 "keyword.operator.quantifier.regexp"
 			],
 			"settings": {
-                "foreground": "#f2976d",
+                "foreground": "#ffa182",
                 "fontStyle": ""
 			}
         },
@@ -231,7 +235,7 @@
                 "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-                "foreground": "#99ebff",
+                "foreground": "#82daff",
                 "fontStyle": ""
 			}
 		},
