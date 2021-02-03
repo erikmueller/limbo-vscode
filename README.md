@@ -5,7 +5,7 @@
 
 ---
 
-![](./preview.png)
+![](https://raw.githubusercontent.com/erikmueller/limbo-vscode/main/preview.png)
 
 # Installation
 
