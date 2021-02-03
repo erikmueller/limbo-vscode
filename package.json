@@ -8,6 +8,7 @@
     "license": "MIT",
     "displayName": "limbo",
     "description": "Black & White theme with a few sprinkles of color",
+    "icon": "logo/logo.png",
     "repository": {
       "type": "git",
       "url": "https://github.com/erikmueller/limbo-vscode"
