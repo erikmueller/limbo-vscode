@@ -97,7 +97,8 @@
                 "keyword.function",
                 "keyword.operator.expression",
                 "meta.separator",
-                "variable.language.this"
+                "variable.language.this",
+                "support.type.object.module"
 			],
 			"settings": {
                 "foreground": "#a2a2a2",
@@ -141,6 +142,7 @@
                 "variable.other.readwrite.alias",
                 "variable.other.property",
                 "variable.other.object.property",
+                "variable.other.constant.property",
                 "variable.parameter",
                 "meta.block",
                 "constant.language.import-export-all",
